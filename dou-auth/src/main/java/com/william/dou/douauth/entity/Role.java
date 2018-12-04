@@ -2,40 +2,41 @@ package com.william.dou.douauth.entity;
 
 import org.springframework.security.core.GrantedAuthority;
 
-import java.io.Serializable;
+import javax.persistence.*;
 
-public class Role implements GrantedAuthority,Serializable {
+@Entity
+public class Role implements GrantedAuthority {
 
-    private Integer id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
 
-    private String roleName;
+    @Column(nullable = false)
+    private String name;
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
-    public String getRoleName() {
-        return roleName;
-    }
 
-    public void setRoleName(String roleName) {
-        this.roleName = roleName;
+    public void setName(String name) {
+        this.name = name;
     }
 
     @Override
     public String getAuthority() {
-        return roleName;
+        return name;
     }
 
     @Override
     public String toString() {
         return "Role{" +
                 "id=" + id +
-                ", roleName='" + roleName + '\'' +
+                ", name='" + name + '\'' +
                 '}';
     }
 }
