@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.william.dou.douuserservice.mapper.UserMapper">
+
+    <sql id="UserColumns">
+        a.id,
+        a.username,
+        a.password
+    </sql>
+
+    <sql id="UserJoins">
+    </sql>
+
+
+    <select id="get" resultType="User" >
+        SELECT
+        <include refid="UserColumns"/>
+        FROM user a
+        WHERE a.id = #{userId}
+    </select>
+
+    <resultMap id="UserResultMap" type="User">
+        <id column="id" property="userId"/>
+        <result column="username" property="userName"/>
+        <result column="password" property="password"/>
+
+    </resultMap>
+
+    <select id="findList" resultMap="UserResultMap">
+        SELECT
+        <include refid="UserColumns"/>
+        FROM  user a
+        <include refid="UserJoins"/>
+        <where>
+            <if test="userId != null and userId != ''">
+                AND a.id = #{userId}
+            </if>
+        </where>
+    </select>
+
+    <!--物理删除-->
+    <update id="delete">
+        DELETE FROM test_user
+        WHERE id = #{userId}
+    </update>
+
+    <!--逻辑删除-->
+    <!--<update id="deleteByLogic">-->
+        <!--UPDATE dbd_terminal SET-->
+        <!--del_flag = #{DEL_FLAG_DELETE}-->
+        <!--WHERE id = #{id}-->
+    <!--</update>-->
+
+
+    <!-- 根据实体名称和字段名称和字段值获取唯一记录 -->
+    <select id="findUniqueByProperty" resultType="User" statementType="STATEMENT">
+        select * FROM user where ${propertyName} = '${value}'
+    </select>
+
+    <resultMap id="RolesAndPermsResultMap" type="User">
+
+        <id column="id" property="userId"/>
+        <result column="username" property="userName"/>
+        <result column="password" property="password"/>
+
+        <collection property="roleList" ofType="Role">
+            <id column="rId" property="id"/>
+            <result column="name" property="roleName"/>
+
+        </collection>
+    </resultMap>
+
+    <select id="selectRolesAndPermsByName" resultMap="RolesAndPermsResultMap" parameterType="java.lang.String">
+        SELECT
+        u.*, r.id rId, r.name
+        FROM  user u, role r, user_role ur
+        WHERE u.id = ur.user_id AND r.id = ur.role_id
+        AND u.username = #{name}
+    </select>
+
+</mapper>

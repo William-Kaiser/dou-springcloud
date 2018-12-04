@@ -1,0 +1,39 @@
+spring:
+  application:
+    name: dou-auth
+  profiles:
+    active: dev
+  cloud:
+    config:
+      fail-fast: true
+      discovery:
+        service-id: dou-config-server
+        enabled: true
+      profile: ${spring.profiles.active}
+      label: master
+
+  datasource:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://127.0.0.1:3307/spring-cloud-auth?useUnicode=true&characterEncoding=utf8&characterSetResults=utf8
+      username: root
+      password: 123456
+
+  jpa:
+      hibernate:
+        ddl-auto: update
+      show-sql: true
+
+security:
+  oauth2:
+    resource:
+      filter-order: 3
+
+#server:
+#  context-path: /uaa
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    serviceUrl:
+      defaultZone: http://dou:123456@localhost:1025/eureka

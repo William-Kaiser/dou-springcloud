@@ -1,0 +1,42 @@
+spring:
+  application:
+    name: dou-user-service
+  datasource:
+      type: com.alibaba.druid.pool.DruidDataSource
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://127.0.0.1:3307/spring-cloud-auth?useUnicode=true&characterEncoding=utf8&characterSetResults=utf8
+      username: root
+      password: 123456
+
+mybatis:
+    mapperLocations: classpath*:com/william/dou/douuserservice/mapper/*Mapper.xml
+    typeAliasesPackage: com/william/dou/douuserservice.entity
+#  profiles:
+#    active: dev
+#  cloud:
+#    config:
+#      fail-fast: true
+#      discovery:
+#        service-id: pig-config-server
+#        enabled: true
+#      profile: ${spring.profiles.active}
+#      label: master
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    serviceUrl:
+      defaultZone: http://dou:123456@localhost:1025/eureka
+
+
+server:
+  port: 9998
+
+security:
+  oauth2:
+    resource:
+      id: dou-user-service
+      user-info-uri: http://localhost:3000/users/current
+      prefer-token-info: false
+

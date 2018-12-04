@@ -1,0 +1,58 @@
+spring:
+  application:
+    name: dou-gateway
+  profiles:
+      active: dev
+  cloud:
+      config:
+        fail-fast: true
+        discovery:
+          service-id: dou-config-server
+          enabled: true
+        profile: ${spring.profiles.active}
+        label: master
+
+logging:
+  level: debug
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    serviceUrl:
+      defaultZone: http://dou:123456@localhost:1025/eureka
+
+zuul:
+  routes:
+    uaa:
+      path: /uaa/**
+      sensitiveHeaders: "*"
+      serviceId: dou-auth
+    user:
+      path: /user/**
+      sensitiveHeaders: "*"
+      serviceId: dou-user-service
+    order:
+      path: /accounts/**
+      sensitiveHeaders: "*"
+      serviceId: account-service
+  add-proxy-headers: true
+
+security:
+  oauth2:
+    resource:
+      user-info-uri: http://localhost:9999/uaa/users/current
+      prefer-token-info: false
+    client:
+      clientId: client
+      clientSecret: 123456
+      accessTokenUri: http://localhost:9999/uaa/oauth/token
+      grant-type: client_credentials,password
+      scope: server
+
+
+
+
+
+
+
