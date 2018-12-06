@@ -21,7 +21,7 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    @GetMapping("/current1")
+    @GetMapping("/current")
     public Principal user(Principal principal) {
         return principal;
     }

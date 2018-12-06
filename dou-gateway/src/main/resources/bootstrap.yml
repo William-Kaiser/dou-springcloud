@@ -33,9 +33,9 @@ zuul:
       sensitiveHeaders: "*"
       serviceId: dou-user-service
     order:
-      path: /accounts/**
+      path: /admin/**
       sensitiveHeaders: "*"
-      serviceId: account-service
+      serviceId: dou-admin
   add-proxy-headers: true
 
 security:
