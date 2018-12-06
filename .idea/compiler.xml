@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="dou" />
+        <module name="dou-admin" />
+        <module name="dou-auth" />
+        <module name="dou-common" />
+        <module name="dou-config" />
+        <module name="dou-eureka" />
+        <module name="dou-gateway" />
+        <module name="dou-user-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="dou" target="1.8" />
+      <module name="dou-admin" target="1.8" />
+      <module name="dou-auth" target="1.8" />
+      <module name="dou-common" target="1.8" />
+      <module name="dou-config" target="1.8" />
+      <module name="dou-eureka" target="1.8" />
+      <module name="dou-gateway" target="1.8" />
+      <module name="dou-user-service" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/dou.iml" filepath="$PROJECT_DIR$/dou.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dou-admin/dou-admin.iml" filepath="$PROJECT_DIR$/dou-admin/dou-admin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dou-auth/dou-auth.iml" filepath="$PROJECT_DIR$/dou-auth/dou-auth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dou-common/dou-common.iml" filepath="$PROJECT_DIR$/dou-common/dou-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dou-config/dou-config.iml" filepath="$PROJECT_DIR$/dou-config/dou-config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dou-eureka/dou-eureka.iml" filepath="$PROJECT_DIR$/dou-eureka/dou-eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dou-gateway/dou-gateway.iml" filepath="$PROJECT_DIR$/dou-gateway/dou-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dou-user-service/dou-user-service.iml" filepath="$PROJECT_DIR$/dou-user-service/dou-user-service.iml" />
+    </modules>
+  </component>
+</project>
