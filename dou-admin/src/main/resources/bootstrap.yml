@@ -11,6 +11,12 @@ spring:
 server:
   port: 9997
 
+turbine:
+  aggregator:
+    clusterConfig: default
+  appConfig: dou-user-service,dou-admin,dou-gateway
+  clusterNameExpression: new String("default")
+
 security:
   oauth2:
     resource:

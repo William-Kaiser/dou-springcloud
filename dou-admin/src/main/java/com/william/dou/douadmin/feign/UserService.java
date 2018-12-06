@@ -27,7 +27,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 /**
  * @author william
  */
-@FeignClient(name = "dou-user-service", configuration = FeignConfig.class,fallback = UserServiceFallbackImpl.class)
+@FeignClient(name = "dou-user-service", configuration = FeignConfig.class, fallback = UserServiceFallbackImpl.class)
 public interface UserService {
 
     /**
