@@ -1,0 +1,20 @@
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    serviceUrl:
+      defaultZone: http://dou:123456@localhost:1025/eureka
+
+spring:
+  application:
+    name: dou-admin
+server:
+  port: 9997
+
+security:
+  oauth2:
+    resource:
+      id: dou-admin
+      user-info-uri: http://localhost:3000/users/current
+      prefer-token-info: false
+

@@ -89,7 +89,7 @@
         <module>dou-eureka</module>
         <module>dou-gateway</module>
         <module>dou-common</module>
-        <!--<module>pig-visual</module>-->
+        <module>dou-admin</module>
     </modules>
 
     <dependencyManagement>
