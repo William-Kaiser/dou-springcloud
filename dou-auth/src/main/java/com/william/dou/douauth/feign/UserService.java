@@ -17,7 +17,9 @@
 
 package com.william.dou.douauth.feign;
 
-import com.william.dou.douauth.entity.User;
+import com.william.dou.douauth.entity.UserVo;
+import com.william.dou.douauth.config.FeignConfig;
+
 import com.william.dou.douauth.feign.fallback.UserServiceFallbackImpl;
 import org.springframework.cloud.netflix.feign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -36,6 +38,6 @@ public interface UserService {
      * @return  User 对象
      */
     @GetMapping("/findUserByUsername/{username}")
-    public User findUserByUsername(@PathVariable(value = "username") String username);
+    public UserVo findUserByUsername(@PathVariable(value = "username") String username);
 
 }

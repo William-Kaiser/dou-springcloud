@@ -17,7 +17,7 @@
 
 package com.william.dou.douauth.feign.fallback;
 
-import com.william.dou.douauth.entity.User;
+import com.william.dou.douauth.entity.UserVo;
 import com.william.dou.douauth.feign.UserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -33,7 +33,7 @@ public class UserServiceFallbackImpl implements UserService {
     private Logger logger = LoggerFactory.getLogger(this.getClass());
 
     @Override
-    public User findUserByUsername(String username) {
+    public UserVo findUserByUsername(String username) {
         logger.error("调用{}异常:{}", "findUserByUsername", username);
         return null;
     }

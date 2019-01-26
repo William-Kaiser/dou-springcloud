@@ -1,13 +1,10 @@
-package com.william.dou.doucommon.entity;
+package com.william.dou.douauth.entity;
 
+import org.springframework.security.core.GrantedAuthority;
 
-import java.io.Serializable;
 import java.util.List;
 
-/**
- * @author likai
- */
-public class Role implements Serializable {
+public class RoleVo implements GrantedAuthority {
 
     private Integer id;
 
@@ -15,7 +12,12 @@ public class Role implements Serializable {
     /**
      *一个角色对应多个用户
      */
-    private List<User> userList;
+    private List<UserVo> userList;
+
+    @Override
+    public String getAuthority() {
+        return roleName;
+    }
 
     public Integer getId() {
         return id;
@@ -33,13 +35,11 @@ public class Role implements Serializable {
         this.roleName = roleName;
     }
 
-
-    public List<User> getUserList() {
+    public List<UserVo> getUserList() {
         return userList;
     }
 
-    public void setUserList(List<User> userList) {
+    public void setUserList(List<UserVo> userList) {
         this.userList = userList;
     }
 }
-

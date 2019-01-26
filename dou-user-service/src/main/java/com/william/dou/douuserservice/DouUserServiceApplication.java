@@ -7,7 +7,6 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 @EnableDiscoveryClient
 @SpringBootApplication
-//@ComponentScan(basePackages = {"com.william.dou.douuserservice.base"})
 @MapperScan("com.william.dou.douuserservice.mapper")
 public class DouUserServiceApplication {
 

@@ -3,53 +3,56 @@ package com.william.dou.douauth.entity;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Collection;
 import java.util.List;
 
-@Entity
-public class User implements UserDetails, Serializable {
+public class UserVo implements UserDetails, Serializable {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-
-    @Column(nullable = false, unique = true)
-    private String username;
-
-    @Column
+    private Integer userId;
+    /**
+     *   用户姓名
+     */
+    private String userName;
+    /**
+     *   密码
+     */
     private String password;
 
-    @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-    @JoinTable(name = "user_role", joinColumns = @JoinColumn(name = "user_id", referencedColumnName = "id"))
-    private List<Role> authorities;
+    /**
+     *   一个用户具有多个角色
+     */
+    private List<RoleVo> roleList;
 
-    public Long getId() {
-        return id;
+    public Integer getUserId() {
+        return userId;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public void setUserId(Integer userId) {
+        this.userId = userId;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 
     public void setPassword(String password) {
         this.password = password;
     }
 
-    public void setAuthorities(List<Role> authorities) {
-        this.authorities = authorities;
+
+    public void setRoleList(List<RoleVo> roleList) {
+        this.roleList = roleList;
     }
 
-
+    public List<RoleVo> getRoleList() {
+        return roleList;
+    }
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        return authorities;
+        return roleList;
     }
 
     @Override
@@ -59,7 +62,7 @@ public class User implements UserDetails, Serializable {
 
     @Override
     public String getUsername() {
-        return username;
+        return userName;
     }
 
     @Override

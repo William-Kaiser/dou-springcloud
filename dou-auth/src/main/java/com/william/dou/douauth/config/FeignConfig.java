@@ -1,4 +1,4 @@
-package com.william.dou.douauth.feign;
+package com.william.dou.douauth.config;
 
 import feign.RequestInterceptor;
 import feign.RequestTemplate;
