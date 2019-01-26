@@ -1,6 +1,5 @@
 package com.william.dou.douuserservice.controller;
 
-import com.william.dou.doucommon.core.BaseController;
 import com.william.dou.douuserservice.entity.User;
 import com.william.dou.douuserservice.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,7 +16,7 @@ import java.security.Principal;
  * @author SuperS
  */
 @RestController
-public class UserController extends BaseController {
+public class UserController{
 
     @Autowired
     private UserService userService;
