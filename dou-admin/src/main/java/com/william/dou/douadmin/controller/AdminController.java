@@ -1,9 +1,10 @@
 package com.william.dou.douadmin.controller;
 
-import com.william.dou.douadmin.entity.User;
+import com.william.dou.common.base.BaseController;
+import com.william.dou.common.entity.User;
 import com.william.dou.douadmin.feign.UserService;
-import com.william.dou.doucommon.core.BaseController;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -16,7 +17,7 @@ import java.security.Principal;
  * @author SuperS
  */
 @RestController
-public class AdminController extends BaseController {
+public class AdminController extends BaseController{
 
     @Autowired
     private UserService userService;
@@ -24,14 +25,14 @@ public class AdminController extends BaseController {
     @GetMapping("/current")
     public Principal user(Principal principal) {
         if (notEmpty(principal)){
-            System.out.println("notEmpty");
+            logger.debug("not empty");
         }
         return principal;
     }
 
     @GetMapping("/findUserByUsername")
     @PreAuthorize("hasAnyAuthority('query')")
-    public User query() {
+    public User findUserByUsername() {
         User user = userService.findUserByUsername("ssm");
         return user;
     }

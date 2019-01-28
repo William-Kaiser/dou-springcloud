@@ -17,8 +17,8 @@
 
 package com.william.dou.douadmin.feign;
 
+import com.william.dou.common.entity.User;
 import com.william.dou.douadmin.config.FeignConfig;
-import com.william.dou.douadmin.entity.User;
 import com.william.dou.douadmin.feign.fallback.UserServiceFallbackImpl;
 import org.springframework.cloud.netflix.feign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;

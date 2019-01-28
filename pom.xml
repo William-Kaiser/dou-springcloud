@@ -71,7 +71,7 @@
         <module>dou-eureka</module>
         <module>dou-gateway</module>
         <module>dou-admin</module>
-        <!--<module>dou-common</module>-->
+        <module>dou-common</module>
     </modules>
 
     <dependencyManagement>

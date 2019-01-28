@@ -17,7 +17,7 @@
 
 package com.william.dou.douadmin.feign.fallback;
 
-import com.william.dou.douadmin.entity.User;
+import com.william.dou.common.entity.User;
 import com.william.dou.douadmin.feign.UserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
