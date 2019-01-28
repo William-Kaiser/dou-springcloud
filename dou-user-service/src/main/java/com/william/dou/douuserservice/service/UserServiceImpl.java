@@ -3,7 +3,7 @@
  */
 package com.william.dou.douuserservice.service;
 
-import com.william.dou.douuserservice.entity.User;
+import com.william.dou.common.entity.User;
 import com.william.dou.douuserservice.mapper.UserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

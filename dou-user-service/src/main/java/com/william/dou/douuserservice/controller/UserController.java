@@ -1,6 +1,6 @@
 package com.william.dou.douuserservice.controller;
 
-import com.william.dou.douuserservice.entity.User;
+import com.william.dou.common.entity.User;
 import com.william.dou.douuserservice.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;

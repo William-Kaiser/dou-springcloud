@@ -15,7 +15,7 @@ spring:
 
 mybatis:
     mapperLocations: classpath*:com/william/dou/douuserservice/mapper/*Mapper.xml
-    typeAliasesPackage: com/william/dou/douuserservice.entity
+    typeAliasesPackage: com/william/dou/common/entity
 #  profiles:
 #    active: dev
 #  cloud:

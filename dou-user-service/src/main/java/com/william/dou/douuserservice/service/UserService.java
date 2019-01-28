@@ -3,13 +3,14 @@
  */
 package com.william.dou.douuserservice.service;
 
-import com.william.dou.douuserservice.entity.User;
+
+import com.william.dou.common.entity.User;
 
 /**
  * @author liankai
  */
 public interface UserService {
 
-	public User selectRolesAndPermsByName(String name);
+	User selectRolesAndPermsByName(String name);
 
 }

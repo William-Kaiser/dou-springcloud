@@ -1,6 +1,7 @@
 package com.william.dou.douuserservice.mapper;
 
-import com.william.dou.douuserservice.entity.User;
+
+import com.william.dou.common.entity.User;
 
 public interface UserMapper {
 
