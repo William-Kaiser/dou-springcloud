@@ -39,4 +39,7 @@ public interface UserService {
     @GetMapping("/findUserByUsername/{username}")
     User findUserByUsername(@PathVariable(value = "username") String username);
 
+    @GetMapping("/findUserName/{username}")
+    User findUserName(@PathVariable(value = "username") String username);
+
 }

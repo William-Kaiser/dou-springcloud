@@ -36,8 +36,9 @@ public class AdminController extends BaseController{
         return user;
     }
 
-    @GetMapping("/demo")
-    public String demo() {
-        return "demo";
+    @GetMapping("/findUserName")
+    public User findUserName() {
+        User user = userService.findUserName("ssm");
+        return user;
     }
 }

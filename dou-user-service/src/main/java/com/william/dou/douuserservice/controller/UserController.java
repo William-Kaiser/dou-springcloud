@@ -42,4 +42,18 @@ public class UserController{
     public User findUserByUsername(@PathVariable String username) {
         return userService.selectRolesAndPermsByName(username);
     }
+
+    /**
+     * 测试用
+     *
+     */
+    @GetMapping("/findUserName/{username}")
+    public User findUserName(@PathVariable String username) {
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        return userService.selectRolesAndPermsByName(username);
+    }
 }
