@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.security.Principal;
 
+import static java.lang.Thread.sleep;
+
 /**
  * Created by SuperS on 2017/9/25.
  *
@@ -50,7 +52,7 @@ public class UserController{
     @GetMapping("/findUserName/{username}")
     public User findUserName(@PathVariable String username) {
         try {
-            Thread.sleep(2000);
+            sleep(2000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

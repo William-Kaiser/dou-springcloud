@@ -16,7 +16,6 @@ spring:
 server:
   port: 9997
 
-
 ribbon:
   ReadTimeout: 3000
   ConnectTimeout: 3000
@@ -24,6 +23,13 @@ ribbon:
   MaxAutoRetriesNextServer: 1
   OkToRetryOnAllOperations: false
 
+logging:
+  level: debug
+
+#feign:
+#  hystrix:
+#    enabled: true
+#
 #hystrix:
 #  command:
 #    default:  #default全局有效，service id指定应用有效
@@ -33,18 +39,14 @@ ribbon:
 #          enabled: false
 #        isolation:
 #          thread:
-#            timeoutInMilliseconds: 5000
-#
-#
-#feign:
-#  hystrix:
-#    enabled: true
+#            timeoutInMilliseconds: 6000
 
-turbine:
-  aggregator:
-    clusterConfig: default
-  appConfig: dou-user-service,dou-admin,dou-gateway
-  clusterNameExpression: new String("default")
+
+#turbine:
+#  aggregator:
+#    clusterConfig: default
+#  appConfig: dou-user-service,dou-admin,dou-gateway
+#  clusterNameExpression: new String("default")
 
 security:
   oauth2:
