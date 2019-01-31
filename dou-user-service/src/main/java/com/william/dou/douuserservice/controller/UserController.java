@@ -52,7 +52,7 @@ public class UserController{
     @GetMapping("/findUserName/{username}")
     public User findUserName(@PathVariable String username) {
         try {
-            sleep(2000);
+            sleep(4000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
