@@ -47,8 +47,11 @@ zuul:
     socket-timeout-millis: 3000
 
 ribbon:
-    ReadTimeout: 6000
+    ReadTimeout: 3000
     ConnectTimeout: 3000
+    eager-load:
+        enabled: true
+        clients: dou-auth, dou-user-service, dou-admin
 #    MaxAutoRetries: 1
 #    MaxAutoRetriesNextServer: 1
 #    OkToRetryOnAllOperations: false
@@ -66,7 +69,7 @@ hystrix:
           enabled: true
         isolation:
           thread:
-            timeoutInMilliseconds: 16000
+            timeoutInMilliseconds: 20000
 
 security:
   oauth2:

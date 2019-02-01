@@ -64,13 +64,7 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_stream_binder_rabbit_1_3_4_RELEASE.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_stream_binder_rabbit_core_1_3_4_RELEASE.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_stream_codec_1_3_3_RELEASE.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dou-gateway/pom.xml" afterPath="$PROJECT_DIR$/dou-gateway/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dou-gateway/src/main/java/com/william/dou/dougateway/filter/MyFilter.java" afterPath="$PROJECT_DIR$/dou-gateway/src/main/java/com/william/dou/dougateway/filter/MyFilter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dou-gateway/src/main/java/com/william/dou/dougateway/hystrix/MyFallbackProvider.java" afterPath="$PROJECT_DIR$/dou-gateway/src/main/java/com/william/dou/dougateway/hystrix/MyFallbackProvider.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dou-gateway/src/main/resources/bootstrap.yml" afterPath="$PROJECT_DIR$/dou-gateway/src/main/resources/bootstrap.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dou.iml" afterPath="$PROJECT_DIR$/dou.iml" />
     </list>
@@ -107,64 +101,56 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="bootstrap.yml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="bootstrap.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dou-gateway/src/main/resources/bootstrap.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="56" column="10" lean-forward="true" selection-start-line="56" selection-start-column="10" selection-end-line="56" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MyFilter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dou-gateway/src/main/java/com/william/dou/dougateway/filter/MyFilter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="768">
-              <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+            <state relative-caret-position="-36">
+              <caret line="49" column="18" lean-forward="false" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dou-gateway/pom.xml">
+        <entry file="file://$PROJECT_DIR$/dou-admin/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="54" column="25" lean-forward="false" selection-start-line="51" selection-start-column="12" selection-end-line="54" selection-end-column="25" />
+            <state relative-caret-position="426">
+              <caret line="51" column="21" lean-forward="false" selection-start-line="51" selection-start-column="21" selection-end-line="51" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyFallbackProvider.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dou-gateway/src/main/java/com/william/dou/dougateway/hystrix/MyFallbackProvider.java">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dou-user-service/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="53" column="77" lean-forward="false" selection-start-line="53" selection-start-column="77" selection-end-line="53" selection-end-column="77" />
+            <state relative-caret-position="412">
+              <caret line="67" column="0" lean-forward="false" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bootstrap.yml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dou-admin/src/main/resources/bootstrap.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DouAdminApplication.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dou-admin/src/main/java/com/william/dou/douadmin/DouAdminApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="64">
+              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#902#903#0" expanded="true" />
-                <element signature="e#971#972#0" expanded="true" />
-                <element signature="e#1038#1039#0" expanded="true" />
-                <element signature="e#1115#1116#0" expanded="true" />
-                <element signature="e#1182#1183#0" expanded="true" />
-                <element signature="e#1269#1270#0" expanded="true" />
-                <element signature="e#2163#2164#0" expanded="true" />
-                <element signature="e#2189#2190#0" expanded="true" />
-                <element signature="e#2255#2256#0" expanded="true" />
-                <element signature="e#2300#2301#0" expanded="true" />
+                <marker date="1549008545840" expanded="false" signature="581:586" ph=" { " />
+                <marker date="1549008545840" expanded="false" signature="641:644" ph=" }" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HttpStatus.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.18.RELEASE/spring-web-4.3.18.RELEASE.jar!/org/springframework/http/HttpStatus.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="80" column="49" lean-forward="false" selection-start-line="80" selection-start-column="30" selection-end-line="80" selection-end-column="49" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -188,6 +174,7 @@
       <find>Role</find>
       <find>retry</find>
       <find>time</find>
+      <find>actuator</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -228,7 +215,6 @@
         <option value="$PROJECT_DIR$/dou-common/src/main/java/com/william/dou/common/base/BaseMapper.java" />
         <option value="$PROJECT_DIR$/dou-common/src/main/java/com/william/dou/common/base/BaseService.java" />
         <option value="$PROJECT_DIR$/dou-common/src/main/java/com/william/dou/common/entity/User.java" />
-        <option value="$PROJECT_DIR$/dou-user-service/pom.xml" />
         <option value="$PROJECT_DIR$/dou-user-service/src/main/java/com/william/dou/douuserservice/mapper/UserMapper.java" />
         <option value="$PROJECT_DIR$/dou-user-service/src/main/java/com/william/dou/douuserservice/service/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/dou-user-service/src/main/java/com/william/dou/douuserservice/service/UserService.java" />
@@ -238,20 +224,21 @@
         <option value="$PROJECT_DIR$/dou-admin/src/main/java/com/william/dou/douadmin/config/SybnHystrixFeignConfiguration.java" />
         <option value="$PROJECT_DIR$/dou-admin/src/main/java/com/william/dou/douadmin/config/FeignConfig.java" />
         <option value="$PROJECT_DIR$/dou-admin/src/main/java/com/william/dou/douadmin/controller/AdminController.java" />
-        <option value="$PROJECT_DIR$/dou-admin/src/main/java/com/william/dou/douadmin/DouAdminApplication.java" />
         <option value="$PROJECT_DIR$/dou-admin/src/main/java/com/william/dou/douadmin/feign/fallback/fallbackFactory.java" />
         <option value="$PROJECT_DIR$/dou-admin/src/main/java/com/william/dou/douadmin/feign/fallback/UserFallbackFactory.java" />
         <option value="$PROJECT_DIR$/dou-admin/src/main/java/com/william/dou/douadmin/feign/UserService.java" />
-        <option value="$PROJECT_DIR$/dou-admin/pom.xml" />
         <option value="$PROJECT_DIR$/dou-admin/src/main/java/com/william/dou/douadmin/feign/fallback/UserServiceFallbackImpl.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/dou-user-service/src/main/java/com/william/dou/douuserservice/config/ResourceServerConfig.java" />
         <option value="$PROJECT_DIR$/dou-user-service/src/main/java/com/william/dou/douuserservice/controller/UserController.java" />
-        <option value="$PROJECT_DIR$/dou-admin/src/main/resources/bootstrap.yml" />
         <option value="$PROJECT_DIR$/dou-gateway/src/main/java/com/william/dou/dougateway/filter/MyFilter.java" />
         <option value="$PROJECT_DIR$/dou-gateway/pom.xml" />
         <option value="$PROJECT_DIR$/dou-gateway/src/main/java/com/william/dou/dougateway/hystrix/MyFallbackProvider.java" />
+        <option value="$PROJECT_DIR$/dou-admin/src/main/java/com/william/dou/douadmin/DouAdminApplication.java" />
+        <option value="$PROJECT_DIR$/dou-user-service/pom.xml" />
+        <option value="$PROJECT_DIR$/dou-admin/pom.xml" />
         <option value="$PROJECT_DIR$/dou-gateway/src/main/resources/bootstrap.yml" />
+        <option value="$PROJECT_DIR$/dou-admin/src/main/resources/bootstrap.yml" />
       </list>
     </option>
   </component>
@@ -291,10 +278,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="86" />
-    <option name="y" value="220" />
-    <option name="width" value="1744" />
-    <option name="height" value="1032" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1616" />
+    <option name="height" value="876" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -343,96 +330,59 @@
             <path>
               <item name="dou" type="b2602c69:ProjectViewProjectNode" />
               <item name="dou" type="462c0819:PsiDirectoryNode" />
-              <item name="dou-user-service" type="462c0819:PsiDirectoryNode" />
+              <item name="dou-admin" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dou" type="b2602c69:ProjectViewProjectNode" />
               <item name="dou" type="462c0819:PsiDirectoryNode" />
-              <item name="dou-user-service" type="462c0819:PsiDirectoryNode" />
+              <item name="dou-admin" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dou" type="b2602c69:ProjectViewProjectNode" />
               <item name="dou" type="462c0819:PsiDirectoryNode" />
-              <item name="dou-user-service" type="462c0819:PsiDirectoryNode" />
+              <item name="dou-admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dou" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dou" type="462c0819:PsiDirectoryNode" />
+              <item name="dou-admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dou" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dou" type="462c0819:PsiDirectoryNode" />
+              <item name="dou-gateway" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dou" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dou" type="462c0819:PsiDirectoryNode" />
+              <item name="dou-gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dou" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dou" type="462c0819:PsiDirectoryNode" />
+              <item name="dou-gateway" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dou" type="b2602c69:ProjectViewProjectNode" />
               <item name="dou" type="462c0819:PsiDirectoryNode" />
-              <item name="dou-user-service" type="462c0819:PsiDirectoryNode" />
+              <item name="dou-gateway" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dou" type="b2602c69:ProjectViewProjectNode" />
               <item name="dou" type="462c0819:PsiDirectoryNode" />
               <item name="dou-user-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dou" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dou" type="462c0819:PsiDirectoryNode" />
-              <item name="dou-user-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="william" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dou" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dou" type="462c0819:PsiDirectoryNode" />
-              <item name="dou-user-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="william" type="462c0819:PsiDirectoryNode" />
-              <item name="dou" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dou" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dou" type="462c0819:PsiDirectoryNode" />
-              <item name="dou-user-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="william" type="462c0819:PsiDirectoryNode" />
-              <item name="dou" type="462c0819:PsiDirectoryNode" />
-              <item name="douuserservice" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dou" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dou" type="462c0819:PsiDirectoryNode" />
-              <item name="dou-user-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="william" type="462c0819:PsiDirectoryNode" />
-              <item name="dou" type="462c0819:PsiDirectoryNode" />
-              <item name="douuserservice" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dou" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dou" type="462c0819:PsiDirectoryNode" />
-              <item name="dou-user-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="william" type="462c0819:PsiDirectoryNode" />
-              <item name="dou" type="462c0819:PsiDirectoryNode" />
-              <item name="douuserservice" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -458,16 +408,14 @@
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="RequestMappingsPanelOrder2" value="2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../springcloud-book/chapter12" />
     <property name="SearchEverywhereHistoryKey" value="zuul&#9;FILE&#9;jar://D:/repository/com/netflix/zuul/zuul-core/1.3.1/zuul-core-1.3.1.jar!/com/netflix/zuul/ZuulFilter.class&#10;Access Denied&#9;PSI&#9;JAVA://java.nio.file.AccessDeniedException&#10;loadauth&#9;PSI&#9;JAVA://org.springframework.security.oauth2.provider.token.ResourceServerTokenServices#loadAuthentication&#10;JdbcTokenStore&#9;FILE&#9;jar://D:/repository/org/springframework/security/oauth/spring-security-oauth2/2.0.15.RELEASE/spring-security-oauth2-2.0.15.RELEASE.jar!/org/springframework/security/oauth2/provider/token/store/JdbcTokenStore.class" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\spc\dou\dou-common\src\main\java\com\william\dou\common\entity" />
-      <recent name="D:\spc\dou\dou-common\src\main\java\com\william\dou\common\base" />
-      <recent name="D:\spc\dou\dou-common\src\main\java\com\william\dou\bean" />
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\spc\dou\dou-common\src\main\java\com\william" />
-      <recent name="D:\spc\dou\dou-common\src\main\java\com\william\dou\doucommon\entity" />
+      <recent name="D:\spc\dou\dou-user-service\src\main\java\com\william\dou\douuserservice\mapper" />
+      <recent name="D:\spc\dou\dou-user-service\src\main\resources\mapper" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.william.dou.douauth.entity" />
@@ -476,10 +424,12 @@
       <recent name="com.william.dou.douadmin.entity" />
       <recent name="com.william.dou.douadmin.feign.fallback" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\spc\dou\dou-admin\src\main\resources" />
+      <recent name="D:\spc\dou\dou-common\src\main\java\com\william\dou\common\entity" />
+      <recent name="D:\spc\dou\dou-common\src\main\java\com\william\dou\common\base" />
+      <recent name="D:\spc\dou\dou-common\src\main\java\com\william\dou\bean" />
       <recent name="D:\spc\dou\dou-common\src\main\java\com\william" />
-      <recent name="D:\spc\dou\dou-user-service\src\main\java\com\william\dou\douuserservice\mapper" />
-      <recent name="D:\spc\dou\dou-user-service\src\main\resources\mapper" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -687,7 +637,7 @@
       <workItem from="1548752483777" duration="1111000" />
       <workItem from="1548808497257" duration="8724000" />
       <workItem from="1548904376045" duration="10325000" />
-      <workItem from="1549000911817" duration="2935000" />
+      <workItem from="1549000911817" duration="5822000" />
     </task>
     <task id="LOCAL-00001" summary="**************">
       <created>1543933723079</created>
@@ -808,11 +758,18 @@
       <option name="project" value="LOCAL" />
       <updated>1548915667600</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="**************">
+      <created>1549003869467</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1549003869467</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="198143000" />
+    <option name="totallyTimeSpent" value="201030000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -825,7 +782,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.57796013" sideWeight="0.50402576" order="7" side_tool="true" content_ui="tabs" />
@@ -843,13 +799,13 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run Dashboard" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.44900352" sideWeight="0.49597424" order="13" side_tool="false" content_ui="combo" />
+      <window_info id="Run Dashboard" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5263775" sideWeight="0.49597424" order="13" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4384525" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942554" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Mybatis datasource" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942554" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942554" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25550187" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25550187" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32957596" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -933,9 +889,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dou-common/src/main/java/com/william/dou/common/base/BaseMapper.java" />
-    <entry file="file://$PROJECT_DIR$/dou-common/src/main/java/com/william/dou/common/base/BaseService.java" />
-    <entry file="file://$PROJECT_DIR$/dou-common/src/main/java/com/william/dou/common/base/CrudService.java" />
     <entry file="file://$PROJECT_DIR$/dou-common/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
@@ -961,13 +914,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dou-user-service/src/main/java/com/william/dou/douuserservice/entity/Role.java" />
     <entry file="file://$PROJECT_DIR$/dou-user-service/src/main/java/com/william/dou/douuserservice/entity/User.java" />
-    <entry file="file://$PROJECT_DIR$/dou-user-service/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="25" column="21" lean-forward="false" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dou-user-service/src/main/java/com/william/dou/douuserservice/mapper/UserMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
@@ -1034,14 +980,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dou-admin/src/main/java/com/william/dou/douadmin/DouAdminApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3">
-          <caret line="10" column="10" lean-forward="false" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-netflix-core/1.4.5.RELEASE/spring-cloud-netflix-core-1.4.5.RELEASE.jar!/org/springframework/cloud/netflix/feign/FeignClient.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
@@ -1092,17 +1030,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="24" column="21" lean-forward="false" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
-          <folding>
-            <element signature="n#dependencyManagement#0;n#project#0;n#!!top" expanded="false" />
-            <element signature="n#build#0;n#project#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dou-admin/src/main/java/com/william/dou/douadmin/feign/fallback/UserServiceFallbackImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="541">
@@ -1145,14 +1072,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dou-admin/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-352">
-          <caret line="34" column="21" lean-forward="false" selection-start-line="30" selection-start-column="8" selection-end-line="34" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-netflix-core/1.4.5.RELEASE/spring-cloud-netflix-core-1.4.5.RELEASE.jar!/org/springframework/cloud/netflix/zuul/filters/route/ZuulFallbackProvider.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="256">
@@ -1179,14 +1098,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
           <caret line="10" column="36" lean-forward="false" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dou-admin/src/main/resources/bootstrap.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="21" column="19" lean-forward="true" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
           <folding />
         </state>
       </provider>
@@ -1238,8 +1149,8 @@
         <state relative-caret-position="477">
           <caret line="36" column="34" lean-forward="false" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="34" />
           <folding>
-            <element signature="e#1455#1456#0" expanded="true" />
-            <element signature="e#1526#1527#0" expanded="true" />
+            <element signature="e#1455#1456#0" expanded="false" />
+            <element signature="e#1526#1527#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1262,7 +1173,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dou-gateway/src/main/java/com/william/dou/dougateway/hystrix/MyFallbackProvider.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
+        <state relative-caret-position="221">
           <caret line="53" column="77" lean-forward="false" selection-start-line="53" selection-start-column="77" selection-end-line="53" selection-end-column="77" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1280,10 +1191,81 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="50" column="52" lean-forward="false" selection-start-line="50" selection-start-column="44" selection-end-line="50" selection-end-column="52" />
+          <folding>
+            <element signature="n#dependencyManagement#0;n#project#0;n#!!top" expanded="false" />
+            <element signature="n#build#0;n#project#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dou-admin/mvnw.cmd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dou-admin/src/main/resources/logback-spring.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/de/codecentric/spring-boot-admin-server/1.5.1/spring-boot-admin-server-1.5.1.jar!/de/codecentric/boot/admin/config/EnableAdminServer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="18" column="18" lean-forward="false" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dou-admin/src/main/java/com/william/dou/douadmin/DouAdminApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1549008545840" expanded="false" signature="581:586" ph=" { " />
+            <marker date="1549008545840" expanded="false" signature="641:644" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dou-user-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="412">
+          <caret line="67" column="0" lean-forward="false" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dou-admin/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="426">
+          <caret line="51" column="21" lean-forward="false" selection-start-line="51" selection-start-column="21" selection-end-line="51" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/dou-gateway/src/main/resources/bootstrap.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="56" column="10" lean-forward="true" selection-start-line="56" selection-start-column="10" selection-end-line="56" selection-end-column="10" />
+        <state relative-caret-position="-36">
+          <caret line="49" column="18" lean-forward="false" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dou-admin/src/main/resources/bootstrap.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
           <folding />
         </state>
       </provider>
