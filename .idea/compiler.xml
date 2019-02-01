@@ -6,7 +6,6 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="dou" />
         <module name="dou-admin" />
         <module name="dou-auth" />
         <module name="dou-common" />
@@ -20,6 +19,7 @@
       <module name="dou" target="1.8" />
       <module name="dou-admin" target="1.8" />
       <module name="dou-auth" target="1.8" />
+      <module name="dou-commom" target="1.8" />
       <module name="dou-common" target="1.8" />
       <module name="dou-config" target="1.8" />
       <module name="dou-eureka" target="1.8" />

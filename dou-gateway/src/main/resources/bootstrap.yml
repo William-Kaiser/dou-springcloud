@@ -42,6 +42,31 @@ zuul:
       sensitiveHeaders: "*"
       serviceId: dou-admin
   add-proxy-headers: true
+  host:
+    connect-timeout-millis: 3000
+    socket-timeout-millis: 3000
+
+ribbon:
+    ReadTimeout: 6000
+    ConnectTimeout: 3000
+#    MaxAutoRetries: 1
+#    MaxAutoRetriesNextServer: 1
+#    OkToRetryOnAllOperations: false
+
+feign:
+  hystrix:
+    enabled: true
+
+hystrix:
+  command:
+    default:  #default全局有效，service id指定应用有效
+      execution:
+        timeout:
+          #如果enabled设置为false，则请求超时交给ribbon控制,为true,则超时作为熔断根据
+          enabled: true
+        isolation:
+          thread:
+            timeoutInMilliseconds: 16000
 
 security:
   oauth2:
