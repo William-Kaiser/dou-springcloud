@@ -11,6 +11,16 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
+
+/**
+ * 配置spring security
+ * @author lk
+ * 通过＠EnableWebSecurity 注解开启 Web 资源的保护功能。在 configure
+    ( HttpSecurity http ）方法中配置所有的请求都需要验证，如果请求验证不通过，则重定位到 401
+    界面。在 configure(AuthenticationManagerBuilder auth 方法中配置验证的用户信息源 密码
+    策略。 IoC 容器 AuthenticationManager Bean Bean 0Auth2 的配
+    中使用，因为只有在 OAuth2 中配置了 AuthenticationManager ，密码类型的验证才会开启
+ */
 @Configuration
 @EnableWebSecurity
 public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
@@ -23,6 +33,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
         auth.userDetailsService(userServiceDetail).passwordEncoder(new BCryptPasswordEncoder());
     }
 
+    //配置了这个 Bean 才会开启密码类型的验证
     @Bean
     @Override
     public AuthenticationManager authenticationManagerBean() throws Exception {
