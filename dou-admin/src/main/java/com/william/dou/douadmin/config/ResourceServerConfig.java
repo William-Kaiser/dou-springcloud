@@ -7,11 +7,7 @@ import org.springframework.security.oauth2.config.annotation.web.configuration.R
 
 import javax.servlet.http.HttpServletResponse;
 
-/**
- * Created by SuperS on 2017/9/25.
- *
- * @author SuperS
- */
+
 @Configuration
 @EnableResourceServer
 public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
@@ -24,7 +20,7 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
                 .authenticationEntryPoint((request, response, authException) -> response.sendError(HttpServletResponse.SC_UNAUTHORIZED))
                 .and()
                 .authorizeRequests()
-                .antMatchers("/hystrix.stream/**").permitAll()
+//                .antMatchers("/hystrix.stream/**").permitAll()
                 .anyRequest().authenticated()
                 .and()
                 .httpBasic();
