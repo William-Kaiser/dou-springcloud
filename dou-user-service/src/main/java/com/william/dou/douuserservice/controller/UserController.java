@@ -3,7 +3,6 @@ package com.william.dou.douuserservice.controller;
 import com.william.dou.common.entity.User;
 import com.william.dou.douuserservice.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
@@ -29,7 +28,6 @@ public class UserController{
     }
 
     @GetMapping("/query")
-    @PreAuthorize("hasAnyAuthority('query')")
     public String query() {
         return "具有query权限";
     }

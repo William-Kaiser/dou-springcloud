@@ -82,6 +82,7 @@ security:
       accessTokenUri: http://localhost:9999/uaa/oauth/token
       grant-type: client_credentials,password
       scope: server
+      user-authorization-uri: http://localhost:9999/uaa/oauth/authorize
 
 
 

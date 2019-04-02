@@ -38,10 +38,7 @@ eureka:
 server:
   port: 9998
 
-security:
-  oauth2:
-    resource:
-      id: dou-user-service
-      user-info-uri: http://localhost:3000/users/current
-      prefer-token-info: false
+management:
+  security:
+    enabled: false
 

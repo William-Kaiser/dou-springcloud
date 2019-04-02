@@ -6,10 +6,8 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/dou-eureka/pom.xml" />
         <option value="$PROJECT_DIR$/dou-config/pom.xml" />
-        <option value="$PROJECT_DIR$/dou-auth/pom.xml" />
         <option value="$PROJECT_DIR$/dou-gateway/pom.xml" />
         <option value="$PROJECT_DIR$/dou-user-service/pom.xml" />
-        <option value="$PROJECT_DIR$/dou-admin/pom.xml" />
         <option value="$PROJECT_DIR$/dou-common/pom.xml" />
       </list>
     </option>

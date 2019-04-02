@@ -17,6 +17,10 @@ spring:
       url: jdbc:mysql://127.0.0.1:3307/spring-cloud-auth?useUnicode=true&characterEncoding=utf8&characterSetResults=utf8
       username: root
       password: 123456
+  redis:
+      host: 127.0.0.1
+      port: 6379
+      password:
 
 #  jpa:
 #      hibernate:
