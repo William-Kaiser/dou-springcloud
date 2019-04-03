@@ -1,21 +1,24 @@
+server:
+  port: 9999
+
 spring:
   application:
     name: dou-gateway
   profiles:
       active: dev
-  cloud:
-      config:
-        fail-fast: true
-        discovery:
-          service-id: dou-config-server
-          enabled: true
-        profile: ${spring.profiles.active}
-        label: master
-  zipkin:
-    base-url: http://localhost:9997
-  sleuth:
-    sampler:
-      percentage: 1.0
+#  cloud:
+#      config:
+#        fail-fast: true
+#        discovery:
+#          service-id: dou-config-server
+#          enabled: true
+#        profile: ${spring.profiles.active}
+#        label: master
+#  zipkin:
+#    base-url: http://localhost:9997
+#  sleuth:
+#    sampler:
+#      percentage: 1.0
 
 logging:
   level: debug

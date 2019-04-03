@@ -58,6 +58,14 @@
         </dependency>
         <!--测试依赖-->
         <dependency>
+            <groupId>org.jolokia</groupId>
+            <artifactId>jolokia-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
@@ -72,6 +80,7 @@
         <module>dou-gateway</module>
         <module>dou-admin</module>
         <module>dou-common</module>
+        <!--<module>dou-monitor</module>-->
     </modules>
 
     <dependencyManagement>

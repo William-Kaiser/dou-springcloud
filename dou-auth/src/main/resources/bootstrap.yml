@@ -1,16 +1,19 @@
+server:
+  port: 3000
+
 spring:
   application:
     name: dou-auth
   profiles:
     active: dev
-  cloud:
-    config:
-      fail-fast: true
-      discovery:
-        service-id: dou-config-server
-        enabled: true
-      profile: ${spring.profiles.active}
-      label: master
+#  cloud:
+#    config:
+#      fail-fast: true
+#      discovery:
+#        service-id: dou-config-server
+#        enabled: true
+#      profile: ${spring.profiles.active}
+#      label: master
 
   datasource:
       driver-class-name: com.mysql.jdbc.Driver
