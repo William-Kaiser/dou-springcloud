@@ -18,8 +18,6 @@
 package com.william.dou.douauth.feign;
 
 import com.william.dou.douauth.entity.UserVo;
-import com.william.dou.douauth.config.FeignConfig;
-
 import com.william.dou.douauth.feign.fallback.UserServiceFallbackImpl;
 import org.springframework.cloud.netflix.feign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -28,7 +26,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 /**
  * @author william
  */
-@FeignClient(name = "dou-user-service", configuration = FeignConfig.class, fallback = UserServiceFallbackImpl.class)
+@FeignClient(name = "dou-user-service", fallback = UserServiceFallbackImpl.class)
 public interface UserService {
 
     /**

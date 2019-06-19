@@ -37,9 +37,7 @@ public class AdminController extends BaseController{
     }
 
     @GetMapping("/findUserName")
-    @PreAuthorize("hasAnyAuthority('query')")
-    public User findUserName() {
-        User user = userService.findUserName("ssm");
-        return user;
+    public String findUserName() {
+        return "测试权限";
     }
 }

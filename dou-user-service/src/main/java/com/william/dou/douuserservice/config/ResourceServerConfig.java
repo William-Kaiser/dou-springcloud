@@ -1,6 +1,5 @@
-package com.william.dou.douadmin.config;
+package com.william.dou.douuserservice.config;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.oauth2.config.annotation.web.configuration.EnableResourceServer;
@@ -12,18 +11,13 @@ import org.springframework.security.oauth2.config.annotation.web.configuration.R
 public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
 
 
-    @Autowired
-    private PermitAllSecurityConfig permitAllSecurityConfig;
-
     @Override
     public void configure(HttpSecurity http) throws Exception {
 
         http
                 .csrf().disable()
-                .apply(permitAllSecurityConfig)
-                .and()
                 .authorizeRequests()
-                .antMatchers("/findUserName").permitAll()
+                .antMatchers("/findUserByUsername/**").permitAll()
                 .anyRequest().authenticated()
                 .and()
                 .httpBasic();
