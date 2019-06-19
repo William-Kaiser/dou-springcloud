@@ -24,6 +24,7 @@
       <module name="dou-config" target="1.8" />
       <module name="dou-eureka" target="1.8" />
       <module name="dou-gateway" target="1.8" />
+      <module name="dou-monitor" target="1.8" />
       <module name="dou-user-service" target="1.8" />
     </bytecodeTargetLevel>
   </component>

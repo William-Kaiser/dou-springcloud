@@ -74,6 +74,7 @@ hystrix:
           thread:
             timeoutInMilliseconds: 20000
 
+#sso 单点登录
 security:
   oauth2:
     resource:
@@ -86,6 +87,17 @@ security:
       grant-type: client_credentials,password
       scope: server
       user-authorization-uri: http://localhost:9999/uaa/oauth/authorize
+
+
+
+#security:
+#  oauth2:
+#    client:
+#      client-id: client
+#      client-secret: 123456
+#    resource:
+#      jwt:
+#         key-uri: http://localhost:3000/oauth/token_key #解析jwt令牌所需要密钥的地址
 
 
 
